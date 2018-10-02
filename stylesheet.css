@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: DinLight;
+    font-weight: 100;
+    src: url(assets/fonts/DINWeb-Light.woff);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .01);
+}
+
+@font-face {
+    font-family: Din;
+    src: url(assets/fonts/DINWeb.woff)
+}
+
+@font-face {
+    font-family: DinBold;
+    font-weight: 700;
+    src: url(assets/fonts/DINWeb-Bold.woff)
+}
+
+body {
+    background-color: #F1EDEA;
+    color: #1C1C1C;
+    font-family: Din, "PT Sans", Roboto, sans-serif;
+}
+
+.containing-div {
+    background-color: #F1EDEA;
+    margin: 1rem;
+}
+
+.white-button {
+    color: #FFFFFF;
+    background-color: Transparent;
+    border: 1px solid #FFFFFF;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.white-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Din, "PT Sans", Roboto, sans-serif;
+}
+
+.gold-button {
+    color: #9B8730;
+    background-color: Transparent;
+    border: 1px solid #9B8730;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.gold-button a {
+    text-decoration: none;
+    color: #9B8730;
+    font-family: Din, "PT Sans", Roboto, sans-serif;
+}
+
+/* Top section */
+.navbar {
+    padding: 1rem 0 1rem 0;
+    background: #1c1c1c;
+}
+
+.navbar img {
+    width: 100%;
+}
+
+#logo {
+    display: none;
+}
+
+#logo-horizontal {
+    width: 80%;
+}
+
+#search-icon {
+    margin: 0 0 0 0.5rem;
+    width: 6%;
+}
+
+.hamburger-menu {
+    margin: 0 0 0 0.5rem;
+    width: 6%;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+.main-image .trending {
+    position: absolute;
+    top: 28%;
+    left: 25%;
+}
+
+.main-image .back-catalogue {
+    display: none;
+}
+
+.main-image .botw {
+    display: none;
+}
+
+.main-image .the-blog {
+    display: none;
+}
+
+/* Video DIV */
+.video-content {
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #FFFFFF;
+}
+
+.video-content img{
+    width: 100%;
+}
+
+.video-content-text {
+    margin: 1rem 0 1rem 0;
+}
+
+/* Blog DIV */
+.blog {
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #FFFFFF;
+}
+
+.blog h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.blog p {
+    margin: 0 0 1rem 0;
+}
+
+/* Sign Up DIV */
+.mail-signup {
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.mail-signup h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.mail-signup p {
+    font-size: 1rem;
+}
+
+.mail-signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],[type=email] {
+    border: none;
+    border-bottom: 1px solid #1C1C1C;
+    margin: 0.5rem auto;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    margin: 1rem 0 0 0 auto;
+    background-color: #E7E2DF;
+}
+
+footer ul {
+    margin: 1rem 0 0 0;
+    display: flex;
+    list-style: none
+}
+
+footer li {
+    margin: 0 0.5rem 0 0;
+}
+
+footer li~li {
+    border-left: 0.05rem solid #1C1C1C;
+    padding-left: 0.4rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.social-media {
+    margin: 1rem 0 1rem 0;
+}
+
+.social-media li {
+    border-left: 0;
+}
+
+.social-media li a{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #FFFFFF no-repeat center center;
+    border-radius: 50%;
+    text-align: left;
+    text-indent: 200%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media li a.twitter {
+    background-image: url(assets/social/twitter.png);
+    background-size: 1.5rem;
+}
+
+.social-media li a.instagram {
+    background-image: url(assets/social/instagram.png);
+    background-size: 1.5rem;
+}
+
+.social-media li a.pintrest {
+    background-image: url(assets/social/pintrest.png);
+    background-size: 1.5rem;
+}
