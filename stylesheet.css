@@ -21,13 +21,18 @@ body {
     background-color: #F1EDEA;
     color: #1C1C1C;
     font-family: Din, "PT Sans", Roboto, sans-serif;
+    margin: 0 auto;
 }
 
+/* Common Elements */
+
+/* Used to add colour around the edges of elements */
 .containing-div {
     background-color: #F1EDEA;
     margin: 1rem;
 }
 
+/* Will be used elsewhere. Defining these two now */
 .white-button {
     color: #FFFFFF;
     background-color: Transparent;
@@ -64,6 +69,8 @@ body {
     font-family: Din, "PT Sans", Roboto, sans-serif;
 }
 
+/* End of Common Elements */
+
 /* Top section */
 .navbar {
     padding: 1rem 0 1rem 0;
@@ -83,11 +90,6 @@ body {
 }
 
 #search-icon {
-    margin: 0 0 0 0.5rem;
-    width: 6%;
-}
-
-.hamburger-menu {
     margin: 0 0 0 0.5rem;
     width: 6%;
 }
@@ -114,6 +116,52 @@ body {
     display: none;
 }
 
+/* Hamburger Menu */
+.navbar .hamburger-menu {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 0 0 0.5rem;
+    top: 0.55rem;
+}
+
+.navbar .hamburger-menu .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #575756;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu .menu-links {
+    display: none;
+    background-color: #1C1C1C;
+    margin: 2rem 0 0 0;
+    
+}
+.hamburger-menu a {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 /* Video DIV */
 .video-content {
     padding: 1rem;
@@ -129,6 +177,21 @@ body {
     margin: 1rem 0 1rem 0;
 }
 
+.play-icon {
+    position: absolute;
+    top: 42%;
+    left: 0%;
+}
+
+.video-content-text h2 {
+    font-size: 2rem;
+}
+
+.video-content-text p {
+    margin: 1rem 0 0 0;
+    
+}
+
 /* Blog DIV */
 .blog {
     padding: 1rem;
@@ -139,10 +202,16 @@ body {
 .blog h2 {
     font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
+    border-bottom: 1px solid #1C1C1C
 }
 
 .blog p {
     margin: 0 0 1rem 0;
+}
+
+.blog a {
+    color: #1C1C1C;
+    text-decoration: none;
 }
 
 /* Sign Up DIV */
@@ -181,6 +250,7 @@ footer {
     padding: 1rem;
     margin: 1rem 0 0 0 auto;
     background-color: #E7E2DF;
+    font-size: 0.8rem;
 }
 
 footer ul {

@@ -2,103 +2,107 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>NZ Music Live | New Zealand's Music, live</title>
-  <meta name="Nick Leslie" content="NZML Homepage">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"-->
-  <link rel="stylesheet" href="cssreset.css" type="text/css">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <meta name="Nick Leslie" content="NZML Homepage">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="cssreset.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nzml.js"></script>
   </head>
   <body>
-  <header>
+    <header>
       <!--Top navbar-->
       <div class="navbar">
-      <img id="logo-horizontal" src="assets/NZML-logo-Horizontal-trans.png" alt="New Zealand Music Live Logo">
-      <img id="logo" src="assets/NZML-logo-trans.png" alt="New Zealand Music Live Logo">
-      <img id="search-icon" src="assets/search-icon.png" alt="Search Icon">
-      <div class="hamburger-menu"></div>
+        <img id="logo-horizontal" src="assets/NZML-logo-Horizontal-trans.png" alt="New Zealand Music Live Logo">
+        <img id="logo" src="assets/NZML-logo-trans.png" alt="New Zealand Music Live Logo">
+        <img id="search-icon" src="assets/search-icon.png" alt="Search Icon">
+
+        <!--Hamburger Menu-->
+        <div class="hamburger-menu" onclick="expandMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <div class="menu-links">
+          <a href="">THE BLOG</a>
+          <a href="">TEST</a>
+          <a href="">TEST</a>
+          <a href="">TEST</a>
+        </div>
         </div>
 
+      </div>
       <!--Main Image-->
       <div class="main-image">
-      <img src="assets/crowd-at-concert.png" alt="Live band performing">
-      <button class="white-button trending"><a href="">TRENDING</a></button>
-      <button class="white-button back-catalogue"><a href="">BACK CATALOGUE</a></button>
-      <button class="white-button botw"><a href="">BAND OF THE WEEK</a></button>
-      <button class="white-button the-blog"><a href="">THE BLOG</a></button>
+        <img src="assets/crowd-at-concert.png" alt="Live band performing">
+        <button class="white-button trending"><a href="">TRENDING</a></button>
+        <button class="white-button back-catalogue"><a href="">BACK CATALOGUE</a></button>
+        <button class="white-button botw"><a href="">BAND OF THE WEEK</a></button>
+        <button class="white-button the-blog"><a href="">THE BLOG</a></button>
       </div>
-  </header>
-
-  <main>
+    </header>
+    <main>
       <div class="containing-div">
-      <div class="video-content" id="video1" alt="Salmonella Dub - Song 1">
-          <img src="assets/colour-video-thumbnail.jpg" alt="Salmonella Dub - Song 1 Video">
+        <div class="video-content" id="video1" alt="Salmonella Dub - Song 1">
+          <a href=""> 
+          <img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
+          <img class="play-icon" src="assets/playicon.png" alt="Play Icon"></a> 
           <div class="video-content-text">
-              <h2>Song By Band</h2>
-              <p>Some text description</p>
+            <h2>Song By Band</h2>
+            <p>Some text description</p>
           </div>
+        </div>
       </div>
-    </div>
-
-    <div class="containing-div">
-      <div class="blog">
-          <h2>Blog Post 1</h2>
-          <p>The quick brown fox jumped over the lazy dog The quick brown fox jumped over the lazy dogThe quick brown fox jumped over the lazy dogThe quick brown fox jumped over the lazy dog</p>
+      <div class="containing-div">
+        <div class="blog">
+          <a href="">
+            <h2>Blog Post 1</h2>
+            <p>Lorem ipsum dolor amet raw denim gastropub ethical everyday carry, tofu man braid seitan selfies tbh. Palo santo 90's godard intelligentsia. XOXO dreamcatcher offal, man braid chillwave af tilde yr vaporware hammock tbh celiac vice lumbersexual taiyaki. Cold-pressed af normcore meh. Echo park yuccie tattooed waistcoat prism brooklyn microdosing subway tile tacos mlkshk listicle trust fund vinyl. Af live-edge austin hoodie cronut, pabst thundercats health goth raw denim you probably haven't heard of them wayfarers pinterest readymade</p>
+          </a>
+        </div>
       </div>
-    </div>
-
-    <div class="containing-div">
-      <div class="mail-signup">
+      <div class="containing-div">
+        <div class="mail-signup">
           <h1>KEEP IN TOUCH</h1>
           <p>Some Text will go here</p>
           <p>And some text here too</p>
           <form action="">
-                <input type="text" name="firstname" placeholder="First Name">
-
-                <input type="text" name="lastname" placeholder="Last Name">
-
-              <input type="email" name="email" placeholder="Email Address">
-
-              <input type="submit" class="gold-button" value="SIGN UP">
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="submit" class="gold-button" value="SIGN UP">
           </form>
+        </div>
       </div>
-    </div>
-  </main>
-
-  <footer>
-
-    <ul class="social-media">
+    </main>
+    <footer>
+      <ul class="social-media">
         <li><a class="twitter" href="">twitter</a></li>
         <li><a class="instagram" href="">instagram</a></li>
         <li><a class="pintrest" href="">pintrest</a></li>
-    </ul>
+      </ul>
       <p>New Zealand Music Live</p>
       <br>
       <p>64 Manchester Street</p>
       <p>Christchurch | New Zealand</p>
       <a href="tel:03-336-1234">(03) 336-1234</a>
       <br>
-
-        <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Something Else</a></li>
-        </ul>
-
-        <ul>
-            <li><a href="">Some More</a></li>
-            <li><a href="">Some More</a></li>
-            <li><a href="">Some More</a></li>
-        </ul>
-
-        <br>
-
-        <p>This is where the copyright info and whatnot will be</p>
-  </footer>
-
-
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Something Else</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Some More</a></li>
+        <li><a href="">Some More</a></li>
+        <li><a href="">Some More</a></li>
+      </ul>
+      <br>
+      <p>This is where the copyright info and whatnot will be</p>
+    </footer>
   </body>
 </html>
