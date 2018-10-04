@@ -161,6 +161,9 @@
   .hamburger-menu a {
     margin: 1rem 0 0 0;
     padding: 1rem 0 0 0;
+    text-decoration: none;
+    color: #575756;
+    cursor: pointer;
   }
     
   /* Rotate first bar */
