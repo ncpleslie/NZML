@@ -140,7 +140,6 @@
     display: none;
   }
   
-  
   /* Hamburger Menu */
   
   .navbar .hamburger-menu {
@@ -228,6 +227,7 @@
   
   .video-content-text h2 {
     font-size: 2rem;
+    border-bottom: 1px solid #1C1C1C
   }
   
   .video-content-text p {
