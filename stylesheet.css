@@ -144,7 +144,6 @@
   
   .navbar .hamburger-menu {
     overflow: hidden;
-    display: inline-block;
     cursor: pointer;
     margin: 0 0.25rem 0 0.5rem;
   }
