@@ -47,12 +47,14 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    width: 18rem;
   }
   
   .white-button a {
     text-decoration: none;
     color: #FFFFFF;
     font-family: Din, "PT Sans", Roboto, sans-serif;
+    text-align: center;
   }
   
   .gold-button {
@@ -65,6 +67,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin: 1rem 0 0 0;
   }
   
   .gold-button a {
@@ -98,6 +101,7 @@
   
   #logo {
     display: none;
+    align-self: flex-start;
   }
   
   #logo-horizontal {
@@ -120,31 +124,42 @@
   }
 
   .main-image {
+    position: relative;
     display: flex;
+
     justify-content: center;
-    /* align-items: flex-end */
+    align-items: flex-end;
   }
   
   .main-image img {
     width: 100%;
     height: 100%;
   }
+
+  .main-image-menu {
+    float: left;
+    position: absolute;
+    z-index: 1100;
+    display: flex;
+  }
   
   .main-image .trending {
-    position: absolute;
-    margin: 35% 0 0 0;
+    margin: 1rem;
   }
   
   .main-image .back-catalogue {
     display: none;
+    margin: 1rem;
   }
   
   .main-image .botw {
     display: none;
+    margin: 1rem;
   }
   
   .main-image .the-blog {
     display: none;
+    margin: 1rem;
   }
   
   /* Hamburger Menu */
@@ -175,7 +190,7 @@
     margin: 1rem 0 0 0;
     padding: 1rem 0 0 0;
     text-decoration: none;
-    color: #575756;
+    color: #A9A9A9;
     cursor: pointer;
   }
     
@@ -363,3 +378,144 @@
     background-image: url(assets/social/pintrest.png);
     background-size: 1.5rem;
   }
+
+
+  /* Media Query for Responsive Design*/
+
+  @media only screen and (min-width: 75rem) {
+
+    /*Navbar */
+    .navbar {
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    #logo-horizontal {
+      display: none;
+    }
+
+    #logo {
+      display: inline-block;
+      position: absolute;
+      width: 40%;
+      left: 0%;
+    }
+
+    .hamburger-menu {
+      order: 3;
+    }
+
+    .hamburger-menu .menu-links {
+      margin: 2rem 1000rem 0 0;
+    }
+
+    #search-icon {
+      width: 2%;
+      order: 1;
+      margin: 0 0.2rem 0 0;
+    }
+
+    #search-box {
+      margin: 1rem;
+      order: 2;
+      margin: 0.1rem;
+    }
+    /* End of Navbar */
+
+    /* Main Image */
+    .main-image .back-catalogue {
+      display: inline-block;
+    }
+
+    .main-image  .botw {
+      display: inline-block;
+    }
+
+    .main-image  .the-blog {
+      display: inline-block;
+    }
+
+    /* End of Main Image */
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 10rem 0 10rem;
+    }
+
+    .video1-div{
+      grid-column: 2 / 3;
+      grid-row: 1;
+      margin: 3rem 3rem 0 1.5rem;
+    }
+
+    .video2-div{
+      grid-column: 2 / 1 span;
+      grid-row: 2;
+      margin: 0 3rem 0 1.5rem;
+    }
+
+    .video-content .play-icon{
+      width: 40%;
+    }
+
+    .blog-div {
+      grid-column: 1 / 1 span;
+      grid-row: 1 / 2 span;
+      margin: 3rem 1.5rem 0 3rem;
+    }
+
+    .blog {
+      padding: 4rem;
+    }
+
+    .mail-div {
+      grid-column: 1 / 2 span;
+      grid-row: 3;
+      margin: 3rem 3rem 0 3rem;
+    }
+
+    .mail-signup {
+      padding: 3rem 10rem 3rem 10rem;
+    }
+
+    /* Footer */
+    .footer-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 12rem 0 12rem;
+    }
+
+    .social-media-div {
+      grid-column: 1 / 1 span;
+    }
+
+    .footer-links-div {
+      grid-column: 2 / 1 span;
+    }
+
+    .footer-links-div ul {
+      display: block;
+    }
+
+    .footer-links2-div ul {
+      display: block;
+    }
+
+    footer ul li {
+      border-left: 0;
+      padding: 0;
+    }
+
+    .footer-links2-div {
+      grid-column: 3 / 1 span;
+    }
+
+    .bottom-div {
+      margin: 1rem 0 0 0;
+      border-top: 0.05rem solid #1C1C1C;
+      grid-column: 1 / 3 span;
+      grid-row-start: 3;
+    }
+
+}
