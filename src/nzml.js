@@ -1,5 +1,4 @@
 let menuOpen = false
-let searchOpen = false
 
 function expandMenu(x) {
             x.classList.toggle("change")
@@ -28,6 +27,8 @@ function expandMenu(x) {
                 searchBox.style.width = '0%'
             }         
         }
+
+let searchOpen = false
 
 function searchFunction() {
     let logo = document.getElementById('logo-horizontal')

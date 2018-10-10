@@ -183,7 +183,7 @@
   .hamburger-menu .menu-links {
     display: none;
     background-color: #1C1C1C;
-    margin: 2rem 30rem 0 0;
+    margin: 2rem 30000rem 0 0;
   }
   
   .hamburger-menu a {
@@ -406,7 +406,12 @@
     }
 
     .hamburger-menu .menu-links {
-      margin: 2rem 1000rem 0 0;
+      margin: 0;
+      padding: 1rem;
+      right: 0%;
+      width: 10rem;
+      z-index: 99;
+      position: fixed;
     }
 
     #search-icon {
