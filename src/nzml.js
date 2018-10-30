@@ -144,3 +144,15 @@ function expandRecordingIndex() {
         bandDesc.style.display = "none"
     }
 }
+
+
+// JQuery Slider
+$(document).ready(function() {
+	$('#slider').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 3,
+		variableWidth: true,
+		adaptiveHeight: true,
+	  })
+  })
