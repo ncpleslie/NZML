@@ -11,6 +11,7 @@ function expandMenu(x) {
 	let searchBox = document.getElementById('search-box')
 	
 	const windowWidth = 1021
+	
 	// Mobile - Remove logo and search icon
 	if (self.innerWidth <= windowWidth) {
 	if (menuOpen) {
