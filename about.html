@@ -18,42 +18,48 @@
     <header>
       <!--Top navbar-->
       <div class="navbar">
-        <a id="logo-horizontal" href="index.html">
+        <a id="logo-horizontal-standard" href="index.html">
         <img src="assets/nzmllogohorizontal.png" alt="New Zealand Music Live Logo"></a>
         <img id="search-icon" src="assets/search-icon.png" alt="Search Icon" onclick="searchFunction()">
         <input id="search-box" type="text" name="search" placeholder="Search...">
         <!--Hamburger Menu-->
         <div class="hamburger-menu" onclick="expandMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <div class="menu-links">
-            <a href="index.html">HOME</a>
-            <a href="blog.html">THE BLOG</a>
-            <a href="recordingindex.html">BACK CATALOGUE</a>
-            <a href="botw.html">BAND OF THE WEEK</a>
+            <p class="hamburger-desktop">menu</p>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="menu-links">
+              <a href="index.html">HOME</a>
+              <a href="blog.html">THE BLOG</a>
+              <a href="recordingindex.html">BACK CATALOGUE</a>
+              <a href="botw.html">BAND OF THE WEEK</a>
+            </div>
           </div>
-        </div>
       </div>
     </header>
     <main>
-        <div class="containing-div blog-div">
+      <div class="blog-page">
+        <div class="containing-div blog-div-actual">
         <div class="blog">
           <a href="">
             <h2>About NZML</h2>
-            <p>description</p>
+            <p>Sam Stewart started collecting recordings of live performances by New Zealand bands and musicians when he was a schoolboy. He had a music teacher at school who regularly played NZ music records to introduce the pupils to local music. The teacher would talk passionately about the different pieces of music. She showed the pupils how NZ music had developed and diversified over time. Sam was hooked. He started to look around for recordings to collect for himself. He also bought a professional-quality Sony tape recorder with money he earnt delivering supermarket pamphlets and used it record some live performances himself. Slowly, but steadily, his collection grew.</p>
+            <p>In 1999 Sam decided to make collecting live recordings of NZ music his main focus. He established his company, NZ Music Live, and has been devoting more time to collecting recordings ever since. He still goes out and records live performances himself, when the musicians give him permission. Currently, he has thousands of recordings, including many that are considered to be significant. The idea came to him that it would be wonderful to be able to share his recordings with people from around the world, so he has started this website, which showcases the music he has collected.</p>
           </a>
         </div>
       </div>
+    </div>
+
       <div class="containing-div mail-div">
           <div class="mail-signup">
             <h1>KEEP IN TOUCH</h1>
-            <p>Some Text will go here</p>
-            <p>And some text here too</p>
-            <form action="">
+            <p>Sign up for our mailing list</p>
+            <p>and we'll keep you updated</p>
+            <p>on New Zealand Music</p>
+            <form method="POST" action="mailto:bogus@bogus.com">
               <input type="text" name="firstname" placeholder="First Name">
               <input type="text" name="lastname" placeholder="Last Name">
-              <input type="email" name="email" placeholder="Email Address">
+              <input type="email" name="email" placeholder="Email Address" required>
               <input type="submit" class="gold-button" value="SIGN UP">
             </form>
           </div>

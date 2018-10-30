@@ -18,22 +18,23 @@
     <header>
       <!--Top navbar-->
       <div class="navbar">
-        <a id="logo-horizontal" href="index.html">
+        <a id="logo-horizontal-standard" href="index.html">
         <img src="assets/nzmllogohorizontal.png" alt="New Zealand Music Live Logo"></a>
         <img id="search-icon" src="assets/search-icon.png" alt="Search Icon" onclick="searchFunction()">
         <input id="search-box" type="text" name="search" placeholder="Search...">
         <!--Hamburger Menu-->
         <div class="hamburger-menu" onclick="expandMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <div class="menu-links">
-            <a href="index.html">HOME</a>
-            <a href="blog.html">THE BLOG</a>
-            <a href="recordingindex.html">BACK CATALOGUE</a>
-            <a href="botw.html">BAND OF THE WEEK</a>
+            <p class="hamburger-desktop">menu</p>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="menu-links">
+              <a href="index.html">HOME</a>
+              <a href="blog.html">THE BLOG</a>
+              <a href="recordingindex.html">BACK CATALOGUE</a>
+              <a href="botw.html">BAND OF THE WEEK</a>
+            </div>
           </div>
-        </div>
       </div>
       <!--Main Image-->
       <div class="main-image">
@@ -41,12 +42,15 @@
       </div>
     </header>
     <main>
-        <div class="containing-div blog-div">
-        <div class="blog">
-          <a href="blog.html">
+        <div class="containing-div recordingindex-div">
+        <div class="blog recording-text">
             <h2>Recording Index</h2>
-            <p>ABCDEFGHIJKLNOPQRSTUVWXYZ</p>
-          </a>
+            <h3>Pick a letter</h3>
+            <p onclick="expandRecordingIndex()">ABCDEFGHIJKLNOPQRSTUVWXYZ</p>
+            <a href="botw.html">
+              <h2 id="band-name">Salmonella Dub</h2>
+              <p id="band-description">Salmonella Dub is a dub/drum n bass/reggae/roots band from New Zealand. The band was formed in 1992 by Andrew Penman, Dave Deakins, and Mark Tyler. The band has toured extensively throughout New Zealand, Australia, and Europe, including the UK and Ireland.</p>
+            </a>
         </div>
       </div>
     </main>

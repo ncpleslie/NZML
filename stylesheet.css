@@ -49,6 +49,10 @@
     display: inline-block;
     width: 10rem;
   }
+
+  .white-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   
   .white-button a {
     text-decoration: none;
@@ -68,6 +72,10 @@
     text-decoration: none;
     display: inline-block;
     margin: 1rem 0 0 0;
+  }
+
+  .gold-button:hover {
+    background-color: rgba(155, 135, 48, 0.3)
   }
   
   .gold-button a {
@@ -108,11 +116,17 @@
     width: 100%;
     height: 100%;
   }
+
+  #logo-horizontal-standard img{
+    width: 100%;
+    height: 100%;
+  }
   
-  #search-icon {
+  .navbar #search-icon {
     width: 7%;
     height: 7%;
-    margin: 0 0 0 0.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+    cursor: pointer;
   }
   
   #search-box {
@@ -126,14 +140,18 @@
   .main-image {
     position: relative;
     display: flex;
-
     justify-content: center;
     align-items: flex-end;
+    width: 100%;
   }
   
+  #main-image-desktop {
+    display: none
+  }
+
   .main-image img {
     width: 100%;
-
+    height: 100%;
   }
 
   .main-image-menu {
@@ -162,14 +180,23 @@
     margin: 1rem;
   }
   
+
   /* Hamburger Menu */
-  
+ 
   .navbar .hamburger-menu {
     overflow: hidden;
     cursor: pointer;
     margin: 0 0.25rem 0 0.5rem;
   }
-  
+ 
+  .hamburger-desktop{
+    display: none;
+    font-size: 2rem;
+    padding: 1rem 2rem 0.5rem 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
   .navbar .hamburger-menu .bar1,
   .bar2,
   .bar3 {
@@ -254,10 +281,9 @@
   .video-content-text p {
     margin: 1rem 0 0 0;
   }
-  
-  
+
   /* Blog DIV */
-  
+
   .blog {
     padding: 1rem;
     margin: 1rem auto;
@@ -265,20 +291,33 @@
   }
   
   .blog h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem 0 1rem 0;
     border-bottom: 1px solid #1C1C1C
   }
   
+  .blog h3 {
+    font-size: 1.5rem;
+  }
+
   .blog p {
     margin: 0 0 1rem 0;
   }
   
-  .blog a {
+  .blog a, .blog-page a {
     color: #1C1C1C;
     text-decoration: none;
   }
+
+
+  .blog ul {
+    margin: 1rem;
+    list-style: initial;
+  }
   
+  .line-4 {
+    display: none;
+  }
   
   /* Sign Up DIV */
   
@@ -304,7 +343,7 @@
   }
   
   input[type=text],
-  [type=email] {
+  [type=email],[name=message] {
     border: none;
     border-bottom: 1px solid #1C1C1C;
     margin: 0.5rem auto;
@@ -312,8 +351,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  
-  
+
   /* Footer */
   
   footer {
@@ -379,21 +417,89 @@
     background-size: 1.5rem;
   }
 
+  .recording-text {
+    text-align: center;
+  }
+
+  .recording-text p {
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+  }
+
+  .recording-text #band-name, #band-description {
+    display: none;
+  }
+
+  #band-description {
+    letter-spacing: 0;
+  }
+
+  .containing-div .contact-us p{
+    letter-spacing: 0;
+  }
+
+  .containing-div .contact-us form textarea{
+    width: 100%;
+    height: 6rem;
+  }
 
   /* Media Query for Responsive Design*/
 
   /* Tablet */
+  @media only screen and (min-width: 46.8rem) and (max-width: 64rem) {
 
-  @media only screen and (min-width: 46.8rem) and (max-width: 60rem) {
-    body {
-      background-color: #9B8730;
-    }
+  /* Main Image */
+
+  .main-image  .the-blog {
+    display: inline-block;
   }
 
+  .main-image .back-catalogue {
+    display: inline-block;
+  }
 
+  /* End of Main Image */
 
-  /* Full Screen - 1080p */
-  @media only screen and (min-width: 60rem) {
+  .line-1, .line-2, .line-3, .line-4 {
+    display: block;
+  }
+
+  .three-dots {
+    display: block;
+  }
+
+    /* Navbar */
+  .navbar .hamburger-menu .bar1,
+  .bar2,
+  .bar3 {
+    width: 65px;
+    height: 10px;
+    background-color: #575756;
+    margin: 12px 0;
+    transition: 0.4s;
+  }
+
+  .recording-text {
+    text-align: center;
+  }
+
+  .recording-text p {
+    letter-spacing: 1rem;
+    cursor: pointer;
+  }
+
+  .recording-text #band-name, #band-description {
+    display: none;
+  }
+
+  #band-description {
+    letter-spacing: 0;
+  }
+
+  }
+
+  /* Small Screens - iPad Pro, etc*/
+  @media only screen and (min-width: 64rem) and (max-width: 75rem) {
 
     .white-button {
       width: 20%;
@@ -401,12 +507,16 @@
 
     /*Navbar */
     .navbar {
-      justify-content: flex-end;
+      justify-content: space-between;
       padding: 0;
     }
 
     #logo-horizontal {
       display: none;
+    }
+
+    #logo-horizontal-standard img{
+      width: 50%;
     }
 
     #logo {
@@ -420,19 +530,28 @@
       order: 3;
     }
 
+    .navbar #search-icon {
+      width: 2%;
+      height: 2%;
+      filter: brightness(1000%);
+    }
+
+    .hamburger-desktop {
+      display: block;
+      color: white;
+    }
+
+    .hamburger-menu .bar1, .bar2, .bar3 {
+      display: none;
+    }
+
     .hamburger-menu .menu-links {
       margin: 0;
       padding: 1rem;
       right: 0%;
       width: 10rem;
       z-index: 99;
-      position: fixed;
-    }
-
-    #search-icon {
-      width: 2%;
-      order: 1;
-      margin: 0 0.2rem 0 0;
+      position: absolute;
     }
 
     #search-box {
@@ -455,18 +574,30 @@
       display: inline-block;
     }
 
+    #main-image-desktop {
+      display: inline-block
+    }
+
+    #main-image-mobile {
+      display: none
+    }
+
     /* End of Main Image */
 
     main {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 0 10rem 0 10rem;
+      margin: 0 4rem 0 4rem;
+    }
+
+    aside {
+      margin: 1rem 0 0 0;
     }
 
     .video1-div{
       grid-column: 2 / 3;
       grid-row: 1;
-      margin: 3rem 3rem 0 1.5rem;
+      margin: 3rem 3rem 3rem 1.5rem;
     }
 
     .video2-div{
@@ -479,6 +610,17 @@
       width: 40%;
     }
 
+    .blog-page {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 2 span;
+      grid-row: 1 / 2 span;
+    }
+
+    .blog-div-actual {
+      margin: 3rem 10rem 0 10rem;
+    }
+
     .blog-div {
       grid-column: 1 / 1 span;
       grid-row: 1 / 2 span;
@@ -486,7 +628,19 @@
     }
 
     .blog {
-      padding: 4rem;
+      padding: 2rem;
+    }
+
+    .line-1, .line-2 {
+      display: block;
+    }
+
+    .line-3, .line-4 {
+      display: none;
+    }
+
+    .three-dots {
+      display: block;
     }
 
     .mail-div {
@@ -538,4 +692,488 @@
       grid-row-start: 3;
     }
 
+    /* Recording Index */
+
+    .recordingindex-div {
+      grid-column: 1 / 2 span;
+    }
+
+    .recording-text {
+      text-align: center;
+    }
+
+    .recording-text p {
+      letter-spacing: 1rem;
+      cursor: pointer;
+    }
+
+    .recording-text #band-name, #band-description {
+      display: none;
+    }
+
+    #band-description {
+      letter-spacing: 0;
+    }
+
+  }
+
+  /* Slightly Larger Screens */
+  @media only screen and (min-width: 75rem) and (max-width: 119rem) {
+    .white-button {
+      width: 20%;
+    }
+
+    /*Navbar */
+    .navbar {
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    #logo-horizontal {
+      display: none;
+    }
+
+    #logo-horizontal-standard img{
+      width: 50%;
+    }
+
+    #logo {
+      display: inline-block;
+      position: absolute;
+      width: 40%;
+      left: 0%;
+    }
+
+    .hamburger-menu {
+      order: 3;
+    }
+
+    .navbar #search-icon {
+      width: 2%;
+      height: 2%;
+      filter: brightness(1000%);
+      order: 1;
+      margin: 0 0.2rem 0 0;
+    }
+
+    .hamburger-desktop {
+      font-size: 2rem;
+      display: block;
+      color: white;
+    }
+
+    .hamburger-menu .bar1, .bar2, .bar3 {
+      display: none;
+    }
+
+    .hamburger-menu .menu-links {
+      margin: 0;
+      padding: 1rem;
+      right: 0%;
+      width: 10rem;
+      z-index: 99;
+      position: fixed;
+    }
+
+    #search-box {
+      margin: 1rem;
+      order: 2;
+      margin: 0.1rem;
+    }
+    /* End of Navbar */
+
+    /* Main Image */
+    .main-image .back-catalogue {
+      display: inline-block;
+    }
+
+    .main-image  .botw {
+      display: inline-block;
+    }
+
+    .main-image  .the-blog {
+      display: inline-block;
+    }
+
+    #main-image-desktop {
+      display: inline-block;
+    }
+
+    #main-image-mobile {
+      display: none;
+    }
+
+    /* End of Main Image */
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 6rem 0 6rem;
+    }
+
+    /* Video */
+    aside {
+      margin: 1rem 0 0 0;
+    }
+
+    .video1-div{
+      grid-column: 2 / 3;
+      grid-row: 1;
+      margin: 3rem 3rem 3rem 1.5rem;
+    }
+
+    .video2-div{
+      grid-column: 2 / 1 span;
+      grid-row: 2;
+      margin: 0 3rem 0 1.5rem;
+    }
+
+    .video-content .play-icon{
+      width: 40%;
+    }
+
+    .blog-page {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 2 span;
+      grid-row: 1 / 2 span;
+    }
+
+    .blog-div-actual {
+      margin: 3rem 10rem 0 10rem;
+    }
+	
+    .blog-div {
+      grid-column: 1 / 1 span;
+      grid-row: 1 / 2 span;
+      margin: 3rem 1.5rem 0 3rem;
+    }
+
+    .blog {
+      padding: 4rem;
+    }
+
+    .line-1, .line-2, .line-3 {
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    .line-4 {
+      display: none;
+    }
+
+    .three-dots {
+      display: block;
+    }
+
+    .mail-div {
+      grid-column: 1 / 2 span;
+      grid-row: 3;
+      margin: 3rem 3rem 0 3rem;
+    }
+
+    .mail-signup {
+      padding: 3rem 10rem 3rem 10rem;
+    }
+
+    /* Footer */
+    .footer-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 12rem 0 12rem;
+    }
+
+    .social-media-div {
+      grid-column: 1 / 1 span;
+    }
+
+    .footer-links-div {
+      grid-column: 2 / 1 span;
+    }
+
+    .footer-links-div ul {
+      display: block;
+    }
+
+    .footer-links2-div ul {
+      display: block;
+    }
+
+    footer ul li {
+      border-left: 0;
+      padding: 0;
+    }
+
+    .footer-links2-div {
+      grid-column: 3 / 1 span;
+    }
+
+    .bottom-div {
+      margin: 1rem 0 0 0;
+      border-top: 0.05rem solid #1C1C1C;
+      grid-column: 1 / 3 span;
+      grid-row-start: 3;
+    }
+
+    /* Recording Index */
+
+    .recordingindex-div {
+      grid-column: 1 / 2 span;
+    }
+
+    .recording-text {
+      text-align: center;
+    }
+
+    .recording-text p {
+      letter-spacing: 1rem;
+      cursor: pointer;
+    }
+
+    .recording-text #band-name, #band-description {
+      display: none;
+    }
+
+    #band-description {
+      letter-spacing: 0;
+    }
+  }
+
+  /* Fix scaling issues on long blogs */
+  @media only screen and (min-width: 75rem) and (max-width: 90rem) { 
+    .line-1, .line-2 {
+      font-size: 1.25rem;
+      display: block;
+    }
+
+    .line-3, .line-4 {
+      display: none;
+    }
+  }
+
+  /* Full Screen - 1080p */
+  @media only screen and (min-width: 119rem) {
+
+    .white-button {
+      width: 20%;
+    }
+
+    /*Navbar */
+    .navbar {
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    #logo-horizontal {
+      display: none;
+    }
+
+    #logo-horizontal-standard img{
+      width: 50%;
+    }
+
+    #logo {
+      display: inline-block;
+      position: absolute;
+      width: 40%;
+      left: 0%;
+    }
+
+    /* Hambuger Menu Desktop */
+
+    .hamburger-menu {
+      order: 3;
+    }
+
+    .navbar #search-icon {
+      width: 2%;
+      height: 2%;
+      filter: brightness(1000%);
+      order: 1;
+      margin: 0 0.2rem 0 0;
+    }
+
+    .hamburger-desktop {
+      font-size: 2rem;
+      display: block;
+      color: white;
+    }
+
+    .hamburger-menu .bar1, .bar2, .bar3 {
+      display: none;
+    }
+
+    .hamburger-menu .menu-links {
+      margin: 0;
+      padding: 1rem;
+      right: 0%;
+      width: 10rem;
+      z-index: 99;
+      position: absolute;
+    }
+
+
+    #search-box {
+      margin: 1rem;
+      order: 2;
+      margin: 0.1rem;
+    }
+
+    /* End of Navbar */
+
+    /* Main Image */
+    .main-image .back-catalogue {
+      display: inline-block;
+    }
+
+    .main-image  .botw {
+      display: inline-block;
+    }
+
+    .main-image  .the-blog {
+      display: inline-block;
+    }
+
+    #main-image-desktop {
+      display: inline-block;
+    }
+
+    #main-image-mobile {
+      display: none;
+    }
+
+    /* End of Main Image */
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 10rem 0 10rem;
+    }
+
+    /* Video */
+    aside {
+      margin: 1rem 0 0 0;
+    }
+
+    .video1-div{
+      grid-column: 2 / 3;
+      grid-row: 1;
+      margin: 3rem 3rem 3rem 1.5rem;
+    }
+
+    .video2-div{
+      grid-column: 2 / 1 span;
+      grid-row: 2;
+      margin: 0 3rem 0 1.5rem;
+    }
+
+    .video-content .play-icon{
+      width: 40%;
+    }
+
+    .blog-page {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 2 span;
+      grid-row: 1 / 2 span;
+    }
+
+    .blog-div-actual {
+      margin: 3rem 10rem 0 10rem;
+    }
+
+    .blog-div {
+      grid-column: 1 / 1 span;
+      grid-row: 1 / 2 span;
+      margin: 3rem 1.5rem 0 3rem;
+    }
+
+    .blog {
+      padding: 4rem;
+    }
+
+    .blog h2 {
+      font-size: 3rem;
+    }
+
+    .line-1, .line-2, .line-3, .line-4 {
+      display: block;
+      font-size: 1.25rem;
+    }
+
+    .three-dots {
+      display: none;
+    }
+
+    .mail-div {
+      grid-column: 1 / 2 span;
+      grid-row: 3;
+      margin: 3rem 3rem 0 3rem;
+    }
+
+    .mail-signup {
+      padding: 3rem 10rem 3rem 10rem;
+    }
+
+    /* Footer */
+    .footer-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 12rem 0 12rem;
+    }
+
+    .social-media-div {
+      grid-column: 1 / 1 span;
+    }
+
+    .footer-links-div {
+      grid-column: 2 / 1 span;
+    }
+
+    .footer-links-div ul {
+      display: block;
+    }
+
+    .footer-links2-div ul {
+      display: block;
+    }
+
+    footer ul li {
+      border-left: 0;
+      padding: 0;
+    }
+
+    .footer-links2-div {
+      grid-column: 3 / 1 span;
+    }
+
+    .bottom-div {
+      margin: 1rem 0 0 0;
+      border-top: 0.05rem solid #1C1C1C;
+      grid-column: 1 / 3 span;
+      grid-row-start: 3;
+    }
+
+    /* Recording Index */
+
+    .recordingindex-div {
+      grid-column: 1 / 2 span;
+    }
+
+    .recording-text {
+      text-align: center;
+    }
+
+    .recording-text p {
+      letter-spacing: 1rem;
+      cursor: pointer;
+    }
+
+    .recording-text #band-name, #band-description {
+      display: none;
+    }
+
+    #band-description {
+      letter-spacing: 0;
+    }
 }

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="cssreset.css" type="text/css">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <script src="src/nzml.js"></script>
   </head>
   <body>
@@ -24,6 +24,7 @@
         <input id="search-box" type="text" name="search" placeholder="Search...">
         <!--Hamburger Menu-->
         <div class="hamburger-menu" onclick="expandMenu(this)">
+          <p class="hamburger-desktop">menu</p>
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -37,7 +38,8 @@
       </div>
       <!--Main Image-->
       <div class="main-image">
-        <img src="assets/crowd-at-concert.png" alt="Live band performing">
+        <img id="main-image-desktop" src="assets/crowd-at-concert-small.png" alt="Live band performing">
+        <img id="main-image-mobile" src="assets/crowd-at-concert.png" alt="Live band performing">
         <a id="logo" href="index.html">
         <img src="assets/nzmllogo.png" alt="New Zealand Music Live Logo"></a>
 
@@ -51,50 +53,51 @@
     </header>
 
     <main>
+      <aside>
       <div class="containing-div video1-div">
         <div class="video-content" id="video1" alt="Salmonella Dub - Song 1">
-          <a class="video-link" href="video1.html"><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
+          <a class="video-link" href="SalmonellaDub-SoulLoveTrippa.html"><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
           <img class="play-icon" src="assets/playicon.png" alt="Play Icon"></a>
           <div class="video-content-text">
-            <h2>Song By Band</h2>
-            <p>Some text description</p>
+            <h2>Salmonella Dub — Soul Love Trippa</h2>
+            <p>Live at the Common Wealth Games April 2018 on the beach Surfers Paradise.</p>
           </div>
         </div>
       </div>
       <div class="containing-div video2-div">
         <div class="video-content" id="video2" alt="Salmonella Dub - Song 1">
-          <a class="video-link" href=""><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
+          <a class="video-link" href="SalmonellaDub-ThatsWhatIWant.html"><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
           <img class="play-icon" src="assets/playicon.png" alt="Play Icon"></a>
           <div class="video-content-text">
-            <h2>Song By Band 2</h2>
-            <p>Some text description</p>
+            <h2>Salmonella Dub — Thats What I Want</h2>
+            <p>First released on Freak Controller.
+              This version showcases the Tui Soundsystem's remix from our Same Home Town 12" vinyl </p>
           </div>
         </div>
       </div>
+    </aside>
       <div class="containing-div blog-div">
         <div class="blog">
           <a href="blog.html">
-            <h2>Blog Post 1</h2>
-            <p>Lorem ipsum dolor amet raw denim gastropub ethical everyday carry, tofu man braid seitan selfies tbh. Palo santo 90's godard intelligentsia. XOXO dreamcatcher offal, man braid chillwave af tilde yr vaporware hammock tbh celiac vice lumbersexual taiyaki. Cold-pressed af normcore meh. Echo park yuccie tattooed waistcoat prism brooklyn microdosing subway tile tacos mlkshk listicle trust fund vinyl. Af live-edge austin hoodie cronut, pabst thundercats health goth raw denim you probably haven't heard of them wayfarers pinterest readymade</p>
-            <p>Keffiyeh bushwick skateboard, lo-fi unicorn wolf roof party. Vice prism lyft, readymade hashtag asymmetrical gentrify art party chambray vexillologist offal. Green juice messenger bag organic celiac bitters disrupt. Man bun truffaut viral, photo booth neutra kickstarter synth you probably haven't heard of them.</p>
-            <p>Cold-pressed shabby chic ethical try-hard, single-origin coffee tacos pok pok tote bag. Man bun viral humblebrag post-ironic gluten-free williamsburg pickled palo santo vexillologist. Biodiesel chicharrones cray literally pok pok austin man braid tacos wolf asymmetrical. Succulents meditation migas tbh ugh, kale chips tumblr. Twee cornhole offal church-key gluten-free mustache. Raclette tumeric pork belly biodiesel pickled, keffiyeh glossier celiac helvetica.</p>
-            <p>Lorem ipsum dolor amet raw denim gastropub ethical everyday carry, tofu man braid seitan selfies tbh. Palo santo 90's godard intelligentsia. XOXO dreamcatcher offal, man braid chillwave af tilde yr vaporware hammock tbh celiac vice lumbersexual taiyaki. Cold-pressed af normcore meh. Echo park yuccie tattooed waistcoat prism brooklyn microdosing subway tile tacos mlkshk listicle trust fund vinyl. Af live-edge austin hoodie cronut, pabst thundercats health goth raw denim you probably haven't heard of them wayfarers pinterest readymade</p>
-            <p>Keffiyeh bushwick skateboard, lo-fi unicorn wolf roof party. Vice prism lyft, readymade hashtag asymmetrical gentrify art party chambray vexillologist offal. Green juice messenger bag organic celiac bitters disrupt. Man bun truffaut viral, photo booth neutra kickstarter synth you probably haven't heard of them.</p>
-            <p>Cold-pressed shabby chic ethical try-hard, single-origin coffee tacos pok pok tote bag. Man bun viral humblebrag post-ironic gluten-free williamsburg pickled palo santo vexillologist. Biodiesel chicharrones cray literally pok pok austin man braid tacos wolf asymmetrical. Succulents meditation migas tbh ugh, kale chips tumblr. Twee cornhole offal church-key gluten-free mustache. Raclette tumeric pork belly biodiesel pickled, keffiyeh glossier celiac helvetica.</p>
-            <p>Lorem ipsum dolor amet raw denim gastropub ethical everyday carry, tofu man braid seitan selfies tbh. Palo santo 90's godard intelligentsia. XOXO dreamcatcher offal, man braid chillwave af tilde yr vaporware hammock tbh celiac vice lumbersexual taiyaki. Cold-pressed af normcore meh. Echo park yuccie tattooed waistcoat prism brooklyn microdosing subway tile tacos mlkshk listicle trust fund vinyl. Af live-edge austin hoodie cronut, pabst thundercats health goth raw denim you probably haven't heard of them wayfarers pinterest readymade</p>
-            <p>Cold-pressed shabby chic ethical try-hard, single-origin coffee tacos pok pok tote bag. Man bun viral humblebrag post-ironic gluten-free williamsburg pickled palo santo vexillologist. Biodiesel chicharrones cray literally pok pok austin man braid tacos wolf asymmetrical. Succulents meditation migas tbh ugh, kale chips tumblr. Twee cornhole offal church-key gluten-free mustache. Raclette tumeric pork belly biodiesel pickled, keffiyeh glossier celiac helvetica.</p>
+            <h2>The Blog - Weekly Roundup <script> document.write(new Date().toLocaleDateString()); </script></h2>
+            <p class="blog-content line-1">This week we discovered a short week doesn't mean less exciting news announcements, just less days to cram them into! It was a great one for massive tours - British indie rock stars Arctic Monkeys are returning to Aotearoa for an Auckland headline event with LA's Mini Mansions this March, feedback-loving Scottish indie legends The Jesus And Mary Chain are playing shows in Auckland and Wellington also in March, UK electronic punks The Prodigy are heading back our way for an Auckland show in February, infamous scene-defining Madchester crew Happy Mondays are hitting Aotearoa to play their landmark 1990 album Pills ’n’ Thrills and Bellyaches in February, and NYC hip hop legends Jungle Brothers are joining the ever-expanding bill for Splore Festival 2019.</p>
+            <p class="blog-content line-2">Lovers of emerging contemporary sounds didn't get the short end of the stick - LA pop experimentalist Julia Holter is heading our way with live band for her debut show in Aotearoa this summer in celebration of the release of her new album Aviary, Bristol posi-punk quintet IDLES are storming stages in Auckland and Wellington this January, genre-bending Dallas hip hop celeb Post Malone is playing at Auckland's Spark Arena in May, New Zealand-born pop megastar Kimbra is squeezing a Wellington headline show in between support slots for David Byrne's upcoming national tour, Christchurch guitar-slingers Salad Boys and The Ruling Elite are traversing the South Island in November and December, and local songwriters Tom Cunliffe and Emily Fairlight are joining forces for a four date tour of New Zealand.</p>
+            <p class="blog-content line-3">We had the privilege of featuring an illuminating conversation between Wellington-raised, LA-based songwriter Jess Cornelius (Teeth & Tongue) and Martyn Pepperell ahead of her homecoming Wellington show in early November, and a senses-shattering chat between Wellington punks Unsanitary Napkin and our very own Fluffy in advance of their performance at this weekend's Whammyfest 2018. We were thrilled to premiere five fabulous musical works this week - a haunting video from Auckland nightmare country artist Vincent H.L, the catchy sophomore single from lo-fi pop artist Créme Jéan aka Bradley Fafejta (Brand New Math), a futuristic 360 VR video from Auckland via Dunedin duo Two Cartoons, an infectiously catchy guitar-pop single from multi-talented former Motorcade frontman Eden Mulholland.</p>
+            <p class="blog-content line-4">Local highlights included the mind-expanding new instrumental album from Unknown Mortal Orchestra, a bumping six track collaboration between Rwanda / New Zealand rapper Raiza Biza (High Beams) and Melbourne's Remi produced by Detroit hip hop maestro Black Milk, a frenetic seven track debut collection from Christchurch hardcore punx Zhukov, a dazzling new single and animated video from Ladi6, and the blissful ninth release from award-winning songwriter Lawrence Arabia's 2018 Singles Club, 'A Walk In The Suburbs'.</p>
+            <p class="blog-content three-dots">...</p>
           </a>
         </div>
       </div>
       <div class="containing-div mail-div">
         <div class="mail-signup">
           <h1>KEEP IN TOUCH</h1>
-          <p>Some Text will go here</p>
-          <p>And some text here too</p>
-          <form action="">
+          <p>Sign up for our mailing list</p>
+          <p>and we'll keep you updated</p>
+          <p>on New Zealand Music</p>
+          <form method="POST" action="mailto:bogus@bogus.com">
             <input type="text" name="firstname" placeholder="First Name">
             <input type="text" name="lastname" placeholder="Last Name">
-            <input type="email" name="email" placeholder="Email Address">
+            <input type="email" name="email" placeholder="Email Address" required>
             <input type="submit" class="gold-button" value="SIGN UP">
           </form>
         </div>

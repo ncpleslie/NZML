@@ -18,67 +18,74 @@
     <header>
       <!--Top navbar-->
       <div class="navbar">
-        <a id="logo-horizontal" href="index.html">
+        <a id="logo-horizontal-standard" href="index.html">
         <img src="assets/nzmllogohorizontal.png" alt="New Zealand Music Live Logo"></a>
         <img id="search-icon" src="assets/search-icon.png" alt="Search Icon" onclick="searchFunction()">
         <input id="search-box" type="text" name="search" placeholder="Search...">
         <!--Hamburger Menu-->
         <div class="hamburger-menu" onclick="expandMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <div class="menu-links">
-            <a href="index.html">HOME</a>
-            <a href="blog.html">THE BLOG</a>
-            <a href="recordingindex.html">BACK CATALOGUE</a>
-            <a href="botw.html">BAND OF THE WEEK</a>
+            <p class="hamburger-desktop">menu</p>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="menu-links">
+              <a href="index.html">HOME</a>
+              <a href="blog.html">THE BLOG</a>
+              <a href="recordingindex.html">BACK CATALOGUE</a>
+              <a href="botw.html">BAND OF THE WEEK</a>
+            </div>
           </div>
-        </div>
       </div>
       <!--Main Image-->
       <div class="main-image">
-        <img src="assets/crowd-at-concert.png" alt="Live band performing">
+        <img src="assets/bands/salmonelladub.jpg" alt="All the members of Salmonella Dub">
       </div>
     </header>
     <main>
         <div class="containing-div blog-div">
         <div class="blog">
-          <a href="blog.html">
             <h2>Salmonella Dub</h2>
-            <p>Description all about Salmonella Dub</p>
-          </a>
-        </div>
+            <p>Salmonella Dub is a dub/drum n bass/reggae/roots band from New Zealand. The band was formed in 1992 by Andrew Penman, Dave Deakins, and Mark Tyler. The band has toured extensively throughout New Zealand, Australia, and Europe, including the UK and Ireland.</p>
+            <p>The original Salmonella Dub line-up formed in 1992 in Christchurch. They played their first gig in January 1993 at the Westport racecourse. The 'Dubbies' have been called the pioneers and originators of a unique Pacific style of dub/drum ‘n’ bass/reggae/hip hop and groove-based rock, along with other influential 90s bands like Hallelujah Picassos, Nemesis Dub Systems, Unitone HiFi, and to some degree, Supergroove. Acts such as Fat Freddy’s Drop, Shapeshifter, Cornerstone Roots, Kora, and Trinity Roots, as well as the new wave of Australian acts like Budspells, Rastawookie, King Tide, Red Eyes, and the likes, can all thank Salmonella Dub for breaking new ground, in an Australasian alternative music scene which was dominated through most of the 1990s by straight guitar rock, and electronic dance music. For many years the band has been connected to the small north Canterbury town of Kaikoura, where they have their studio, and where they helped found the Kaikoura Roots festival.</p>
+            <p>The group worked for some time with MC Tiki Taane, who began mixing their live sets in 1996, and later joined the band onstage to rap, sing, and play guitar. After developing a profile with the band, Taane embarked on a solo career in 2007. Also notable in 2007 was the exit of saxophone player Conan Wilcox, the author of the dubs horn lines to that point. Other guest or collaborative artists have included Paddy Free (of Pitch Black) who produced the most recent album release Freak Controller and performed with the band, and guests Whirimako Black, Hirini Melbourne, Richard Nunns and MC Mana. The band has also collaborated with the New Zealand Symphony Orchestra and Hamish McKietch.</p>
+            <p>Recent touring entourage includes: Peter Wood, Antsmif, Jason Young (audio), and Steve Jarden (lighting); guest performers include Paul Buchanan (the Mighty Asterix).</p>
+          </div>
       </div>
+
+      <aside>
       <div class="containing-div video1-div">
         <div class="video-content" id="video1" alt="Salmonella Dub - Song 1">
-          <a class="video-link" href="video1.html"><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
+          <a class="video-link" href="SalmonellaDub-SoulLoveTrippa.html"><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
           <img class="play-icon" src="assets/playicon.png" alt="Play Icon"></a>
           <div class="video-content-text">
-            <h2>Song By Band</h2>
-            <p>Some text description</p>
+            <h2>Salmonella Dub — Soul Love Trippa</h2>
+            <p>Live at the Common Wealth Games April 2018 on the beach Surfers Paradise.</p>
           </div>
         </div>
       </div>
       <div class="containing-div video2-div">
         <div class="video-content" id="video1" alt="Salmonella Dub - Song 1">
-          <a class="video-link" href=""><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
+          <a class="video-link" href="SalmonellaDub-ThatsWhatIWant.html"><img class="video-thumbnail" src="assets/videothumbnail.png" alt="Salmonella Dub - Song 1 Video">
           <img class="play-icon" src="assets/playicon.png" alt="Play Icon"></a>
           <div class="video-content-text">
-            <h2>Song By Band 2</h2>
-            <p>Some text description</p>
+            <h2>Salmonella Dub — Thats What I Want</h2>
+            <p>First released on Freak Controller.
+              This version showcases the Tui Soundsystem's remix from our Same Home Town 12" vinyl </p>
           </div>
         </div>
       </div>
+    </aside>
 
       <div class="containing-div mail-div">
           <div class="mail-signup">
             <h1>KEEP IN TOUCH</h1>
-            <p>Some Text will go here</p>
-            <p>And some text here too</p>
-            <form action="">
+            <p>Sign up for our mailing list</p>
+            <p>and we'll keep you updated</p>
+            <p>on New Zealand Music</p>
+            <form method="POST" action="mailto:bogus@bogus.com">
               <input type="text" name="firstname" placeholder="First Name">
               <input type="text" name="lastname" placeholder="Last Name">
-              <input type="email" name="email" placeholder="Email Address">
+              <input type="email" name="email" placeholder="Email Address" required>
               <input type="submit" class="gold-button" value="SIGN UP">
             </form>
           </div>
