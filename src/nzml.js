@@ -171,3 +171,44 @@ function expandRecordingIndex() {
     bandDesc.style.display = 'none'
   }
 }
+
+let arrayOfPages = [{
+  keywords: "salmonella",
+  page: "botw.html"
+}, {
+  keywords: "band",
+  page: 'botw.html'
+}, {
+  keywords: "dub",
+  page: "botw.html"
+}, {
+  keywords: "video",
+  page: "SalmonellaDub-SoulLoveTrippa.html"
+}, {
+  keywords: "contact",
+  page: "contact.html"
+}, {
+  keywords: "contact us",
+  page: "contact.html"
+}, {
+  keywords: "about",
+  page: "about.html"
+}, {
+  keywords: "soul",
+  page: "SalmonellaDub-SoulLoveTrippa.html"
+}, {
+  keywords: "thats",
+  page: "SalmonellaDub-ThatsWhatIWant.html"
+}]
+
+window.onload = function() {
+  const node = document.getElementById('search-box')
+
+  node.addEventListener('keyup', (event) => {
+      if (event.key === 'Enter') {
+          let foundValue = arrayOfPages.find(x => x.keywords === node.value.toLowerCase())
+          console.log(foundValue)
+          window.location.href = foundValue.page
+      }
+  })
+}

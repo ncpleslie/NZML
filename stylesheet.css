@@ -1428,4 +1428,9 @@
       border-bottom: 0;
       padding: 0.5rem 0 0 0;
     }
+
+    /* Search */
+    #myUL {
+      display: none;
+    }
 }
