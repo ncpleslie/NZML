@@ -173,42 +173,44 @@ function expandRecordingIndex() {
 }
 
 let arrayOfPages = [{
-  keywords: "salmonella",
+  keywords: "salmonelladubband",
   page: "botw.html"
 }, {
-  keywords: "band",
-  page: 'botw.html'
+  keywords: "recordingindexbackcatalogue",
+  page: "recordingindex.html"
 }, {
-  keywords: "dub",
-  page: "botw.html"
-}, {
-  keywords: "video",
-  page: "SalmonellaDub-SoulLoveTrippa.html"
-}, {
-  keywords: "contact",
+  keywords: "contactus",
   page: "contact.html"
 }, {
-  keywords: "contact us",
-  page: "contact.html"
-}, {
-  keywords: "about",
+  keywords: "aboutus",
   page: "about.html"
 }, {
-  keywords: "soul",
+  keywords: "soullovetrippa",
   page: "SalmonellaDub-SoulLoveTrippa.html"
 }, {
-  keywords: "thats",
+  keywords: "thatswhatiwant",
   page: "SalmonellaDub-ThatsWhatIWant.html"
+}, {
+  keywords: "homeindexfrontpage",
+  page: "index.html"
+}, {
+  keywords: "theblognewsweeklyupdate",
+  page: "blog.html"
 }]
 
 window.onload = function() {
   const node = document.getElementById('search-box')
-
   node.addEventListener('keyup', (event) => {
       if (event.key === 'Enter') {
-          let foundValue = arrayOfPages.find(x => x.keywords === node.value.toLowerCase())
-          console.log(foundValue)
-          window.location.href = foundValue.page
+        const searchString = node.value.toLowerCase().replace(/ /g,'')
+        const regexp = new RegExp(searchString, 'i')
+        const foundValue = arrayOfPages.filter(x => regexp.test(x.keywords))
+          if (foundValue[0]) {
+          window.location.href = foundValue[0].page
+          } else {
+            alert("No Results Found")
+          }
+        
       }
   })
 }
