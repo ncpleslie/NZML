@@ -634,6 +634,16 @@
       padding: 0.5rem 0 0.5rem 0;
     }
 
+    /* For index page navbar */
+    .index-page-icons {
+     width: 100%;
+    }
+
+    .navbar .index-page-icons #search-icon {
+      width: 2.6%;
+    }
+    /* End of Index-only navbar */
+
     .hamburger-desktop {
       display: block;
       color: white;
@@ -923,6 +933,16 @@
       position: fixed;
     }
 
+    /* For index page navbar */
+    .index-page-icons {
+      width: 100%;
+     }
+
+    .navbar .index-page-icons #search-icon {
+      width: 2.6%;
+    }
+    /* End of Index-only navbar */
+
     /* End of Navbar */
 
     /* Main Image */
@@ -1204,6 +1224,18 @@
       z-index: 99;
       position: absolute;
     }
+
+    
+    /* For index page navbar */
+    .index-page-icons {
+      width: 100%;
+     }
+
+    .navbar .index-page-icons #search-icon {
+      width: 2.6%
+    }
+    /* End of Index-only navbar */
+
 
     /* End of Navbar */
 
