@@ -233,6 +233,10 @@
     padding: 1rem 0 0 0;
   }
 
+  .hamburger-menu li:hover {
+    background-color: #000000;
+  }
+
   .hamburger-menu a {
     text-decoration: none;
     color: #A9A9A9;
@@ -296,6 +300,11 @@
   
   .play-icon {
     position: absolute;
+    opacity: 0.8;
+  }
+
+  .play-icon:hover {
+    opacity: 1;
   }
   
   .video-content-text h2 {
@@ -409,6 +418,10 @@
   footer a {
     text-decoration: none;
     color: #1C1C1C;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
   }
   
   .social-media {
@@ -635,6 +648,10 @@
       cursor: pointer;
       filter: brightness(1000%);
     }
+
+    .navbar .grouped-icons #search-icon:hover {
+      filter: brightness(0%)
+    }
     
     .grouped-icons #search-box {
       display: none;
@@ -666,11 +683,14 @@
 
     .hamburger-menu .menu-links {
       margin: 0;
-      padding: 1rem;
       right: 0%;
       width: 10rem;
       z-index: 99;
       position: absolute;
+    }
+
+    .hamburger-menu .menu-links li {
+      padding: 1rem;
     }
 
     /* End of Navbar */
@@ -937,11 +957,14 @@
 
     .hamburger-menu .menu-links {
       margin: 0;
-      padding: 1rem;
       right: 0%;
       width: 10rem;
       z-index: 99;
       position: fixed;
+    }
+
+    .hamburger-menu .menu-links li {
+      padding: 1rem;
     }
 
     /* For index page navbar */
@@ -1207,6 +1230,10 @@
       cursor: pointer;
       filter: brightness(1000%);
     }
+
+    .navbar .grouped-icons #search-icon:hover {
+      filter: brightness(100%);
+    }
     
     .grouped-icons #search-box {
       display: none;
@@ -1223,17 +1250,25 @@
       color: white;
     }
 
+    .hamburger-desktop:hover {
+      color: #575756;
+    }
+
     .hamburger-menu .bar1, .bar2, .bar3 {
       display: none;
     }
 
     .hamburger-menu .menu-links {
       margin: 0;
-      padding: 1rem;
+    
       right: 0%;
       width: 10rem;
       z-index: 99;
       position: absolute;
+    }
+
+    .hamburger-menu .menu-links li {
+      padding: 1rem;
     }
 
     
