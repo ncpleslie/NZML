@@ -2,7 +2,6 @@
     font-family: DinLight;
     font-weight: 100;
     src: url(assets/fonts/DINWeb-Light.woff);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .01);
   }
   
   @font-face {
