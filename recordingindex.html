@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Back Catalogue | NZ Music Live | New Zealand's Music, live</title>
-    <meta name="Nick Leslie" content="NZML Homepage">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="description" content="New Zealand Music Live Recording Index">
+    <meta name="keywords" content="New Zealand Music Live, Music, Band Names, Salmonella Dub, Live Music recordings">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="cssreset.css" type="text/css">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/cssreset.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="src/nzml.js"></script>
   </head>
@@ -21,65 +21,64 @@
         <a id="logo-horizontal-standard" href="index.html">
         <img src="assets/nzmllogohorizontal.png" alt="New Zealand Music Live Logo"></a>
         <div class="grouped-icons">
-            <img id="search-icon" src="assets/search-icon.png" alt="Search Icon" onclick="searchFunction()">
-            <input id="search-box" type="text" name="search" placeholder="Search...">
-            <!--Hamburger Menu-->
-            <div class="hamburger-menu" onclick="expandMenu(this)">
-                <p class="hamburger-desktop">menu</p>
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="menu-links">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="blog.html">THE BLOG</a></li>
-                    <li><a href="recordingindex.html">BACK CATALOGUE</a></li>
-                    <li><a href="botw.html">BAND OF THE WEEK</a></li>
-                </ul>
-              </div>
+          <img id="search-icon" src="assets/search-icon.png" alt="Search Icon" onclick="searchFunction()">
+          <input id="search-box" type="text" name="search" placeholder="Search...">
+          <!--Hamburger Menu-->
+          <div class="hamburger-menu" onclick="expandMenu(this)">
+            <p class="hamburger-desktop">menu</p>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="menu-links">
+              <li><a href="index.html" title="Go To The Home Page">HOME</a></li>
+              <li><a href="blog.html" title="Go To The Blog">THE BLOG</a></li>
+              <li><a href="recordingindex.html" title="Go To The Recording Index">BACK CATALOGUE</a></li>
+              <li><a href="botw.html" title="Go To Salmonella Dub's Information Page">BAND OF THE WEEK</a></li>
+            </ul>
           </div>
+        </div>
       </nav>
-
     </header>
     <main>
-        <div class="containing-div recordingindex-div">
+      <div class="containing-div recordingindex-div">
         <div class="blog recording-text">
-            <h2>Recording Index</h2>
-            <h3>Pick a letter</h3>
-            <p onclick="expandRecordingIndex()">ABCDEFGHIJKLNOPQRSTUVWXYZ</p>
-            <a href="botw.html">
-              <h2 id="band-name">Salmonella Dub</h2>
-              <p id="band-description">Salmonella Dub is a dub/drum n bass/reggae/roots band from New Zealand. The band was formed in 1992 by Andrew Penman, Dave Deakins, and Mark Tyler. The band has toured extensively throughout New Zealand, Australia, and Europe, including the UK and Ireland.</p>
-            </a>
+          <h2>Recording Index</h2>
+          <h3>Pick a letter</h3>
+          <p onclick="expandRecordingIndex()">ABCDEFGHIJKLNOPQRSTUVWXYZ</p>
+          <a href="botw.html" title="Go To The Salomella Dub Page">
+            <h2 id="band-name">Salmonella Dub</h2>
+            <p id="band-description">Salmonella Dub is a dub/drum n bass/reggae/roots band from New Zealand. The band was formed in 1992 by Andrew Penman, Dave Deakins, and Mark Tyler. The band has toured extensively throughout New Zealand, Australia, and Europe, including the UK and Ireland.</p>
+          </a>
         </div>
       </div>
     </main>
     <footer>
-        <div class="footer-div">
-          <ul class="social-media">
-            <li><a class="twitter" href="">twitter</a></li>
-            <li><a class="instagram" href="">instagram</a></li>
-            <li><a class="pintrest" href="">pintrest</a></li>
-          </ul>
-          <div class="social-media-div">
+      <div class="footer-div">
+        <ul class="social-media">
+          <li><a class="twitter" href="" title="Twitter Link">twitter</a></li>
+          <li><a class="instagram" href="" title="Instagram Link">instagram</a></li>
+          <li><a class="pintrest" href="" title="Pintrest Link">pintrest</a></li>
+        </ul>
+        <div class="social-media-div">
           <p>New Zealand Music Live</p>
           <br>
           <p>64 Manchester Street</p>
           <p>Christchurch | New Zealand</p>
-          <a href="tel:03-336-1234">(03) 336-1234</a>
+          <a href="tel:03-336-1234" title="Our Phone Number">(03) 336-1234</a>
           <br>
         </div>
         <div class="footer-links-div">
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="">Privacy Policy</a></li>
+            <li><a href="about.html" title="Go To The About Page">About Us</a></li>
+            <li><a href="contact.html" title="Go To The Contact Us Page">Contact Us</a></li>
+            <li><a href="" title="Go See Our Privacy Policy">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer-links2-div">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">The Blog</a></li>
-            <li><a href="recordingindex.html">Back Catalogue</a></li>
+            <li><a href="index.html" title="Go To The Home Page">Home</a></li>
+            <li><a href="blog.html" title="Go To The Blog">The Blog</a></li>
+            <li><a href="recordingindex.html" title="Go To The Recording Index">Back Catalogue</a></li>
           </ul>
         </div>
         <div class="bottom-div">
@@ -87,9 +86,10 @@
           <p>© New Zealand Music Live [Sam Stewart] 2018</p>
           <p>Except as permitted by the copyright law applicable to you, you may not reproduce or
             communicate any of the content on this website, including files downloadable from this website,
-            without the permission of the copyright owner.</p>
+            without the permission of the copyright owner.
+          </p>
         </div>
       </div>
-        </footer>
+    </footer>
   </body>
 </html>
